@@ -110,11 +110,12 @@
     }
 
     .box {
-      padding: 50px;
+      padding: 32px;
       border: 0.5px solid gray;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      text-align: center;
 
       @include mobile {
         border: none;

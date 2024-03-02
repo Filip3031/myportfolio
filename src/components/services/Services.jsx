@@ -59,13 +59,10 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Frontend Development</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eum
-            cum veniam doloribus esse, nulla accusamus. Ratione, quae a hic
-            quasi cum vel nostrum reprehenderit perspiciatis minus blanditiis
-            nihil ducimus quia quis assumenda laboriosam sit distinctio
-            asperiores corporis dignissimos pariatur!
+            I specialize in crafting responsive and interactive user interfaces
+            using modern frontend technologies like React, Vue.js, or Angular.
           </p>
           <button>Go</button>
         </motion.div>
@@ -73,13 +70,10 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>UI/UX Design</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eum
-            cum veniam doloribus esse, nulla accusamus. Ratione, quae a hic
-            quasi cum vel nostrum reprehenderit perspiciatis minus blanditiis
-            nihil ducimus quia quis assumenda laboriosam sit distinctio
-            asperiores corporis dignissimos pariatur!
+            Designing intuitive and visually appealing user interfaces to
+            enhance user experience and engagement.
           </p>
           <button>Go</button>
         </motion.div>
@@ -87,13 +81,10 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Responsive Web Design</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eum
-            cum veniam doloribus esse, nulla accusamus. Ratione, quae a hic
-            quasi cum vel nostrum reprehenderit perspiciatis minus blanditiis
-            nihil ducimus quia quis assumenda laboriosam sit distinctio
-            asperiores corporis dignissimos pariatur!
+            Creating websites that adapt seamlessly to various devices and
+            screen sizes for a consistent user experience.
           </p>
           <button>Go</button>
         </motion.div>
@@ -101,13 +92,10 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Web Performance Optimization</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eum
-            cum veniam doloribus esse, nulla accusamus. Ratione, quae a hic
-            quasi cum vel nostrum reprehenderit perspiciatis minus blanditiis
-            nihil ducimus quia quis assumenda laboriosam sit distinctio
-            asperiores corporis dignissimos pariatur!
+            Optimizing website performance to ensure fast loading times and
+            smooth user interactions.
           </p>
           <button>Go</button>
         </motion.div>

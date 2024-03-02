@@ -8,7 +8,7 @@
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 100%;
 
     @include mobile {
@@ -30,8 +30,8 @@
     gap: 20px;
 
     img {
-      width: 18px;
-      height: 18px;
+      width: 34px;
+      height: 34px;
     }
   }
 }

@@ -49,14 +49,14 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}>FILIP KŁOS</motion.h2>
           <motion.h1 variants={textVariants}>
-            Web developer and UI designer
+            React Frontend Developer
           </motion.h1>
-          <motion.div className="buttons" variants={textVariants}>
+          {/* <motion.div className="buttons" variants={textVariants}>
             <motion.button variants={textVariants}>
               See the Latest Works
             </motion.button>
             <motion.button variants={textVariants}>Contact Me</motion.button>
-          </motion.div>
+          </motion.div> */}
           <motion.img
             src="/scroll.png"
             alt=""
@@ -65,14 +65,14 @@ const Hero = () => {
           />
         </motion.div>
       </div>
-      <motion.div
+      {/* <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
-        Writer Content Creator Influencer
-      </motion.div>
+        React Master, UI and UX Designer
+      </motion.div> */}
       <div className="imageContainer">
         <img src="/hero.png" alt="" />
       </div>

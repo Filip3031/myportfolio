@@ -27,6 +27,10 @@
         text-align: center;
       }
 
+      @include tablet {
+        margin: 20px;
+      }
+
       h2 {
         font-size: 30px;
         color: rebeccapurple;
@@ -35,42 +39,42 @@
 
       h1 {
         font-size: 88px;
+        line-height: 90px;
 
         @include mobile {
           font-size: 36px;
+          line-height: 40px;
         }
-      }
 
-      .buttons {
-        button {
-          padding: 20px;
-          border: 1px solid white;
-          border-radius: 10px;
-          background-color: transparent;
-          color: white;
-          margin-right: 20px;
-          cursor: pointer;
-          font-weight: 300;
+        @include tablet {
+          font-size: 74px;
         }
       }
 
       img {
         width: 50px;
+
+        @include mobile {
+          display: none;
+        }
       }
     }
   }
 
   .imageContainer {
-    height: 100%;
+    height: 95%;
     position: absolute;
     top: 0;
     right: 0;
+    border: 4px solid lightgray;
 
     @include mobile {
-      height: 50%;
-      width: 100%;
+      height: 60%;
       top: unset;
-      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      bottom: 0; /* Usuwamy dolny margines */
+      width: 250px;
     }
 
     img {
@@ -81,6 +85,7 @@
   }
   .slidingTextContainer {
     position: absolute;
+    z-index: 0;
     font-size: 50vh;
     bottom: -120px;
     white-space: nowrap;
