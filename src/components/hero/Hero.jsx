@@ -65,14 +65,14 @@ const Hero = () => {
           />
         </motion.div>
       </div>
-      {/* <motion.div
+      <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
         React Master, UI and UX Designer
-      </motion.div> */}
+      </motion.div>
       <div className="imageContainer">
         <img src="/hero.png" alt="" />
       </div>

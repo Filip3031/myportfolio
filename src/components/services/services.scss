@@ -35,6 +35,10 @@
       @include mobile {
         width: 300px;
       }
+
+      @include tablet {
+        width: 150px;
+      }
     }
   }
 
@@ -48,6 +52,10 @@
       width: 100%;
     }
 
+    @include tablet {
+      padding: 20px;
+    }
+
     .title {
       display: flex;
       align-items: center;
@@ -57,6 +65,10 @@
         flex-direction: column;
         text-align: center;
         gap: 20px;
+      }
+
+      @include tablet {
+        gap: 30px;
       }
 
       img {
@@ -78,6 +90,10 @@
         @include mobile {
           font-size: 36px;
         }
+
+        @include tablet {
+          font-size: 64px;
+        }
       }
 
       button {
@@ -94,6 +110,12 @@
           height: 50px;
           width: 150px;
         }
+
+        @include tablet {
+          font-size: 20px;
+          width: 200px;
+          height: 80px;
+        }
       }
     }
   }
@@ -109,19 +131,47 @@
       width: 100%;
     }
 
+    @include tablet {
+      width: 100%;
+    }
+
     .box {
-      padding: 32px;
-      border: 0.5px solid gray;
+      padding: 16px;
+      border-right: 0.5px solid gray;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       text-align: center;
+      gap: 30px;
+
+      &:last-child {
+        border-right: none;
+      }
 
       @include mobile {
         border: none;
         align-items: center;
         gap: 20px;
         padding: 10px;
+      }
+
+      @include tablet {
+        width: 25%;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      h2 {
+        margin-bottom: 42px;
+
+        @include tablet {
+          font-size: 24px;
+        }
+
+        @include mobile {
+          border-bottom: 1px solid gray;
+          width: 100%;
+          padding: 25px;
+        }
       }
 
       p {

@@ -7,8 +7,16 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  padding: 20px;
 
   @include mobile {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    gap: unset;
+  }
+
+  @include tablet {
     width: 100%;
     padding: 10px;
     flex-direction: column;
@@ -21,10 +29,29 @@
     gap: 40px;
 
     @include mobile {
+      gap: unset;
+      text-align: center;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+
+    @include tablet {
       gap: 20px;
       text-align: center;
-      align-items: center;
-      margin-top: 70px;
+      justify-content: space-around;
+    }
+
+    .itemContainer {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 200px;
+
+      @include tablet {
+        align-items: center;
+        flex-direction: row;
+        height: 100px;
+      }
     }
 
     h1 {
@@ -32,7 +59,13 @@
       line-height: 88px;
 
       @include mobile {
-        font-size: 36px;
+        line-height: 30px;
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+
+      @include tablet {
+        font-size: 64px;
       }
     }
 
@@ -46,8 +79,19 @@
     position: relative;
 
     @include mobile {
-      padding: 50px;
+      padding: 0 50px;
       width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include tablet {
+      padding: 0 50px;
+      width: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .phoneSvg {
@@ -55,12 +99,33 @@
       position: absolute;
       margin: auto;
       z-index: -1;
+
+      @include tablet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      svg {
+        @include mobile {
+          width: 300px;
+          height: 300px;
+        }
+      }
     }
 
     form {
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      @include tablet {
+        width: 100%;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
 
       input,
       textarea {

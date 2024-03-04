@@ -59,23 +59,21 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Frontend Development</h2>
+          <h2>Specializing in Frontend Development</h2>
           <p>
-            I specialize in crafting responsive and interactive user interfaces
+            Specialize in crafting responsive and interactive user interfaces
             using modern frontend technologies like React, Vue.js, or Angular.
           </p>
-          <button>Go</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>UI/UX Design</h2>
+          <h2>UI/UX Design and Development</h2>
           <p>
             Designing intuitive and visually appealing user interfaces to
             enhance user experience and engagement.
           </p>
-          <button>Go</button>
         </motion.div>
         <motion.div
           className="box"
@@ -86,7 +84,6 @@ const Services = () => {
             Creating websites that adapt seamlessly to various devices and
             screen sizes for a consistent user experience.
           </p>
-          <button>Go</button>
         </motion.div>
         <motion.div
           className="box"
@@ -97,7 +94,6 @@ const Services = () => {
             Optimizing website performance to ensure fast loading times and
             smooth user interactions.
           </p>
-          <button>Go</button>
         </motion.div>
       </motion.div>
     </motion.div>
