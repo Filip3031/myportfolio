@@ -8,25 +8,27 @@ const items = [
     id: 1,
     title: "Magic Pixel Paradise",
     img: "../public/magicpixel.png",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis reiciendis saepe quod optio iure maxime facere est impedit. Impedit, perspiciatis?",
+    desc: "Magic Pixel Paradise is a website of one of the sellers of illustrations on Etsy. When the seller adds a new product on Etsy, it is automatically added to the website.",
+    link: "https://magicpixelparadise.com/",
   },
   {
     id: 2,
     title: "Atum-namioty",
     img: "../public/atum.png",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis reiciendis saepe quod optio iure maxime facere est impedit. Impedit, perspiciatis?",
+    desc: "Atum-namioty is a website that allows you to familiarize yourself with the offer of a company renting tents.",
+    link: "https://atum-namioty.pl/",
   },
   {
     id: 3,
     title: "Fit-Club",
     img: "../public/fitclub.png",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis reiciendis saepe quod optio iure maxime facere est impedit. Impedit, perspiciatis?",
+    desc: "Fit-club is a website that allows you to familiarize yourself with the trainers, packages, and gym standards.",
   },
   {
     id: 4,
     title: "Future Bank App",
     img: "../public/bankist.png",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis reiciendis saepe quod optio iure maxime facere est impedit. Impedit, perspiciatis?",
+    desc: "Future Bank App is a comprehensive application based solely on JavaScript, through which we can take out loans, make transfers, and more. More details about this application can be found on my GitHub.",
   },
 ];
 
@@ -40,6 +42,14 @@ const Single = ({ item }) => {
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
+  let buttonText = "See Demo";
+  let buttonLink = "/";
+
+  if (item.id === 1 || item.id === 2) {
+    buttonText = "See Website";
+    buttonLink = item.link;
+  }
+
   return (
     <section>
       <div className="container">
@@ -50,7 +60,9 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a href={buttonLink} target="_blank" rel="noopener norefferer">
+              <button>{buttonText}</button>
+            </a>
           </motion.div>
         </div>
       </div>
